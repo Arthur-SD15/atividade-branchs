@@ -1,9 +1,9 @@
 const countIt = () =>{
     let word = document.getElementById("word").value;
-    // word = word.toLowerCase().replace(/[\.\s]/g, '');
+
     word = word.toLowerCase().match(/[a-z]/g).sort();
     let letterCount = {};
-    //creat a count variable and set it to 0
+
     word.forEach(letter => {
     if (letterCount[letter]){
     letterCount[letter]++;
